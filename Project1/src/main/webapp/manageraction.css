@@ -1,0 +1,155 @@
+* 
+{
+	margin: 0;
+	padding: 0;
+}
+
+header
+{
+	padding: 5% 2% 5% 2%;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+.nav-links 
+{
+	display: flex;
+}
+ul 
+{
+	list-style-type: none;
+}
+ul li 
+{
+	padding-right: 10%;
+}
+ul li a 
+{
+	color:white;
+	text-decoration: none;
+}
+.left
+{
+	display:flex;
+	justify-content: flex-start;
+	width:100%;	
+}
+.left h2
+{
+	font-family: 'Sacramento', cursive;
+	font-size: 50px;
+}
+.left h2:hover
+{
+	transform:rotate(10deg);
+}
+.middle 
+{
+	display:flex;
+	justify-content: center;
+	align-self: center;
+	width:100%;	
+}
+.right
+{
+		
+	display:flex;
+	justify-content: flex-end;
+	align-self: center;
+	width:100%;	
+}
+.middle .dropdown
+{
+	position: relative;
+    display: inline-block;
+}
+.middle .dropdown .dropdown-content 
+{
+	  display: none;
+      position: absolute;
+      left: 0;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+}
+.middle .dropdown .dropdown-content a {
+		color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+}
+.middle .dropdown .dropdown-content a:hover
+{
+	background-color: #AAAAAA;
+}
+.middle .dropdown:hover > .dropdown-content
+{
+	display:block;	
+}
+.right .dropdown 
+{
+	position: relative;
+    display: inline-block;
+}
+
+.right .dropdown .dropdown-content 
+{
+	  display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+}
+.right .dropdown .dropdown-content a {
+		color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block	
+}
+.right .dropdown .dropdown-content a:hover
+{
+	background-color: #AAAAAA;
+}
+.right .dropdown:hover > .dropdown-content
+{
+	display:block;	
+}
+
+.nav-links a,p{
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 15px;
+}
+.nav-links li a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.1s;
+}
+
+.nav-links li a:hover::before {
+  transform: scaleX(1);
+}
+
+.row-container {
+	display:flex;
+}
+
+
+
+
+
+
+
+
