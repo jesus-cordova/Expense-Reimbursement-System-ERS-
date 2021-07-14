@@ -10,7 +10,7 @@ function fetchData() {
 			return `<div class ="row-container">
    				<p class="reimb-id">${reimbItem.reimbursementID}</p>
    				<p class="descirption">${reimbItem.description}</p>
-   				<p class="amount">${reimbItem.amount}</p>
+   				<p class="amount">$${reimbItem.amount}</p>
    				<p class="status">${reimbItem.status}</p>
    				<p class="issue-date">${reimbItem.issueDate}</p>
 			</div>

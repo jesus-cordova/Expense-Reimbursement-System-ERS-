@@ -65,8 +65,19 @@
        
     </header>
 <input type="hidden" id="session" value="${manager.getEmpID()}">
+<div class="header">
+   <p>Reimbursement ID</p>
+   <p>First Name</p>
+   <p>Last Name</p>
+   <p>Description</p>
+   <p>Amount</p>
+   <p>Status</p>
+   <p>Issue Date</p>
+	</div>
+	<hr>
    <div class ="container">
    </div> 
+
    <script src="./managerpending.js"></script>
 </body>
 

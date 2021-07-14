@@ -64,6 +64,15 @@
     </header>
 <body>
 <input type="hidden" id="session" value="${employee.getEmpID()}">
+ 	<div class="header">
+   <p>Reimbursement ID</p>
+   <p>Description</p>
+   <p>Amount</p>
+   <p>Status</p>
+   <p>Issue Date</p>
+   <p>Complete Date</p>
+	</div>
+	<hr>
    <div class ="container">
    <p>Reimbursement ID</p>
    <p>Description</p>

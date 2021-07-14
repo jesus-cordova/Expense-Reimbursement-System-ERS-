@@ -65,9 +65,15 @@
        
     </header>
 <input type="hidden" id="session" value="${manager.getEmpID()}">
+	<div class="drop">
    <select class="dropdown-names" onchange="show(this)">
         <option value="">-- Select --</option>
     </select>
+    </div>
+    <div class ="header">
+    </div>
+    <div class ="horizontal">
+    </div>
    <div class ="container">
    </div> 
    <script src="./mf.js"></script>

@@ -131,7 +131,7 @@ public class EmployeeImplementation implements EmployeeService {
 		List<Reimbursement> completedReimbursements = new ArrayList<Reimbursement>();
 		try (Connection con = new DBConnection().getConnection()) {
 
-			String query = "select reimbs.Reimbursement_ID , reimbs.Description, reimbs.Amount, reimbs.Status, reimbs.Issue_Date\r\n"
+			String query = "select reimbs.Reimbursement_ID , reimbs.Description, reimbs.Amount, reimbs.Status, reimbs.Issue_Date, reimbs.Complete_Date\r\n"
 					+ "from dbo.Reimbursements reimbs\r\n"
 					+ "inner join dbo.Employees emps on reimbs.Emp_ID = emps.Emp_ID\r\n"
 					+ "where emps.Emp_ID = ? and reimbs.Status != 'Pending';\r\n" + "";
@@ -144,8 +144,9 @@ public class EmployeeImplementation implements EmployeeService {
 				String description = rs.getString("Description");
 				Double amount = rs.getDouble("Amount");
 				String status = rs.getString("Status");
-				String date = rs.getString("Issue_Date");
-				Reimbursement currentReimbursement = new Reimbursement(reimbID, description, amount, status, date);
+				String issuedate = rs.getString("Issue_Date");
+				String completedate = rs.getString("Complete_Date");
+				Reimbursement currentReimbursement = new Reimbursement(reimbID, description, amount, status, issuedate, completedate);
 				completedReimbursements.add(currentReimbursement);
 
 			}

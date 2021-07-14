@@ -68,7 +68,7 @@
      	<p id="last-name" contenteditable="true">${employee.getLastName()}</p>
      	<p id="email" contenteditable="true">${employee.getEmail()}</p>
      	<p id="phone" contenteditable="true">${employee.getPhoneNumber()}</p>
-     	<input type="button" value="save edits " onclick="saveEdits()"/>
+     	<input type="button" value="Save" onclick="saveEdits()"/>
      	
     </div> 
    <script src="./employeesettings.js"></script>

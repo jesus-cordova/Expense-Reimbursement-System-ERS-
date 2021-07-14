@@ -151,7 +151,25 @@ margin:auto;
 	display: block;
 	margin-bottom: 1%;
 }
-
+label 
+{
+  font-family: 'Yusei Magic', sans-serif;
+}
+.reimb-container .create-button input 
+{
+	margin:auto;
+	margin-top: 5%;
+	border: 1px solid rgba(252, 252, 252, 0.4);
+    outline: none;
+    height: 40px;
+    width: 310px;
+    text-align: center;
+	display: block;
+}
+.reimb-container .create-button input:hover 
+{
+	background-color: #A2DBFA;
+}
 
 
 

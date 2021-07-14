@@ -143,10 +143,12 @@ ul li a
 }
 
 .row-container {
+	margin-left: 5%;
 	margin-top: 5%;
 	display:flex;
 	justify-content: space-evenly;
 	align-items: center;	
+	flex-wrap: nowrap;
 }
 .row-container p 
 {
@@ -158,14 +160,50 @@ ul li a
 .row-container input
 {
 	margin-right:1%;
-	padding-right: 2%;
+	padding-right: 1%;
+	padding-left: 1%;
+}
+.header 
+{
+	
+	margin-left:5%;
+	margin-top: 5%;
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;	
+	flex-wrap: nowrap;
+}
+.header p 
+{
+	
+	padding: 2%;
+	flex: 1 1 0px;
 }
 
+hr
+{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+input 
+{
+	border: 1px solid rgba(252, 252, 252, 0.4);
+    outline: none;
+    height: 40px;
+}
+input:hover 
+{
+	background-color: #A2DBFA;
+}
+.drop
+{
+	margin-top: 5%;
+	text-align: center;
 
-
-
-
-
-
-
+}
+.drop select 
+{
+    height: 40px;
+    width: 150px;
+}
 

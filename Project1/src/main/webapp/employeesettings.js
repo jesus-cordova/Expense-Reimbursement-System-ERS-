@@ -3,13 +3,11 @@ const empID = document.getElementById("session").value;
 	fetchData();
 function saveEdits() {
 
-//get the editable element
 const  newFName = document.getElementById("first-name");
 const  newLName = document.getElementById("last-name");
 const  newEmail = document.getElementById("email");
 const  newPhone = document.getElementById("phone");
 
-//get the edited element content
 const  fName = newFName.innerHTML;
 const  lName = newLName.innerHTML;
 const  email = newEmail.innerHTML;
@@ -18,7 +16,7 @@ const  phone = newPhone.innerHTML;
 	fetch(`http://localhost:8080/Project1/employeesettings?fName=${fName}&lName=${lName}&email=${email}&phone=${phone}&id=${empID}`, {
 	method:"Post"
 	})
-	setTimeout(function(){ fetchData}, 3000);
+    location.reload();
 	}
 
 function fetchData() {

@@ -69,7 +69,9 @@
 		</textarea>
 		<label >Amount</label>
   		<input type="text" id="amount" >
-		<input type="button" value="create new" onclick="createNew()"/>
+  		<div class="create-button">
+		<input type="button" value="Create Reimbursement" onclick="createNew()"/>
+		</div> 
 		</div>
    <script src="./employeereimbursement.js"></script>
 </body>

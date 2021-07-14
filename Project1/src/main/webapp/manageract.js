@@ -15,7 +15,7 @@ function fetchData() {
    				<p class="fName">${reimbItem.fName}</p>
    				<p class="lName">${reimbItem.lName}</p>
    				<p class="descirption">${reimbItem.description}</p>
-   				<p class="amount">${reimbItem.amount}</p>
+   				<p class="amount">$${reimbItem.amount}</p>
    				<p class="status">${reimbItem.status}</p>
    				<p class="issue-date">${reimbItem.issueDate}</p>
      			<input type="button" value="Approve" onclick="saveAction( ${reimbItem.reimbursementID}, 'Approved')"/>
@@ -50,7 +50,7 @@ function saveAction(id, action)
 	})
 
 
-	location.reload(true);
+	    location.reload();
 	
 
 

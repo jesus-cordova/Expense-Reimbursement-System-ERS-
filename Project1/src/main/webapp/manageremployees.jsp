@@ -65,6 +65,14 @@
        
     </header>
 <input type="hidden" id="session" value="${manager.getEmpID()}">
+<div class="header">
+   <p>Employee ID</p>
+   <p>First Name</p>
+   <p>Last Name</p>
+   <p>Email</p>
+   <p>Phone</p>
+	</div>
+	<hr>
    <div class ="container">
    </div> 
    <script src="./manageremployees.js"></script>

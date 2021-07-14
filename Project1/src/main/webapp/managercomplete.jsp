@@ -65,6 +65,17 @@
        
     </header>
 <input type="hidden" id="session" value="${manager.getEmpID()}">
+<div class="header">
+   <p>Reimbursement ID</p>
+   <p>Employee</p>
+   <p>Manager</p>
+   <p>Description</p>
+   <p>Amount</p>
+   <p>Status</p>
+   <p>Issue Date</p>
+   <p>Complete Date</p>
+	</div>
+   <hr>
    <div class ="container">
    </div> 
    <script src="./managercomplete.js"></script>

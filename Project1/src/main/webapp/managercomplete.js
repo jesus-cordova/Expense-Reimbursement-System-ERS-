@@ -12,7 +12,7 @@ function fetchData() {
    				<p class="fName">${reimbItem.empFullName}</p>
    				<p class="lName">${reimbItem.mngrFullName}</p>
    				<p class="descirption">${reimbItem.description}</p>
-   				<p class="amount">${reimbItem.amount}</p>
+   				<p class="amount">$${reimbItem.amount}</p>
    				<p class="status">${reimbItem.status}</p>
    				<p class="issue-date">${reimbItem.issueDate}</p>
    				<p class="issue-date">${reimbItem.completedDate}</p>

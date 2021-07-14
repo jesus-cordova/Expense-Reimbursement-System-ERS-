@@ -64,6 +64,14 @@
     </header>
 <body>
 <input type="hidden" id="session" value="${employee.getEmpID()}">
+ 	<div class="header">
+   <p>Reimbursement ID</p>
+   <p>Description</p>
+   <p>Amount</p>
+   <p>Status</p>
+   <p>Issue Date</p>
+	</div>
+	<hr>
    <div class ="container">
    </div> 
    <script src="./employeepending.js"></script>

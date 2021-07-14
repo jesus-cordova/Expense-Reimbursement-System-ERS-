@@ -27,7 +27,10 @@ public class Employee {
 		this.email = email;
 		this.phoneNumber = phoneNumber;
 	}
-
+	public String getFullName()
+	{
+		return fullName;
+	}
 	public int getEmpID() {
 		return empID;
 	}

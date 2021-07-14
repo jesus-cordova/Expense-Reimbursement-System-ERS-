@@ -28,7 +28,7 @@ let today = new Date();
 const  description = document.getElementById("description").value;
 const  amount = document.getElementById("amount").value;
 console.log(today);
-	fetch(`http://localhost:8080/Project1/employeereimbursement?empID=${empID}&description=${description}&amount=${amount}&status=pending&issueDate=${today}`, {
+	fetch(`http://localhost:8080/Project1/employeereimbursement?empID=${empID}&description=${description}&amount=${amount}&status=Pending&issueDate=${today}`, {
 	method:"Post"
 	})
 	

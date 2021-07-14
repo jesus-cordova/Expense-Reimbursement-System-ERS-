@@ -30,18 +30,23 @@ function show(el)
         return res.json();
     }).then(data => {
         console.log(data);
+		const headerHtml = `<p>Reimbursement ID</p><p>Description</p><p>Amount</p><p>Status</p><p>Issue Date</p><p>Complete Date</p>`
+		const line =`<hr>`
         const html  = data.map(reimbItem =>
         {
-			return `<div class ="row-container">
+			return `
+			<div class ="row-container">
    				<p class="reimb-id">${reimbItem.reimbursementID}</p>
    				<p class="descirption">${reimbItem.description}</p>
-   				<p class="amount">${reimbItem.amount}</p>
+   				<p class="amount">$${reimbItem.amount}</p>
    				<p class="status">${reimbItem.status}</p>
    				<p class="issue-date">${reimbItem.issueDate}</p>
    				<p class="issue-date">${reimbItem.completedDate ? reimbItem.completedDate : 'TBD' }</p>
 			</div>
 			`;       
          }).join("");
+         document.querySelector(".header").innerHTML = headerHtml;
+         document.querySelector(".horizontal").innerHTML = line;
          document.querySelector(".container").innerHTML = html;
     }).catch(error => {
         console.log(error);

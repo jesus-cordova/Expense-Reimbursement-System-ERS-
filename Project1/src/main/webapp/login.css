@@ -1,3 +1,54 @@
+body
+{
+	  background-image: linear-gradient(to bottom left, #f6f6f6, #1e8a37);
+	
+}
+h2
+{
+font-family: 'Sacramento', cursive;
+font-size: 57px;
+}
+.authentication-container
+{
+	margin-top: 7%;
+	 display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.authentication-container input 
+{
+	display: block;
+} 
+.authentication-container .credentials input 
+{
+	border: 1px solid rgba(252, 252, 252, 0.4);
+    
+    outline: none;
+    height: 40px;
+    width: 300px;
+    text-align: center;
+	display: block;
+}
+.authentication-container .submit-button input 
+{
+	margin-top: 7%;
+	
+	border: 1px solid rgba(252, 252, 252, 0.4);
+    
+    outline: none;
+    height: 40px;
+    width: 310px;
+    text-align: center;
+	display: block;
+}
+
+.authentication-container .submit-button input:hover 
+
+{
+		background-color: black ;
+		color:white;	
+}
 .error
 {
 	color: red;
